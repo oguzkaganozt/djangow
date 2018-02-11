@@ -11,3 +11,25 @@ General design steps of a Django-site:
     3. Views designed as simple functions
     4. Views should return an appropriate HTTP response to corresponding URL request.
     5. URL->View->Model->Template->HTTP Response
+    
+To start the django project run from terminal:
+
+    'django-admin startproject mysite'
+    
+To start an app in django project run from terminal:
+
+    'python manage.py startapp polls'
+    
+To run the django development server run from terminal:
+
+    'python manage.py runserver'
+    
+To sync the models to database(django will auto create or alter changes for DB ) run from terminal:
+
+    'python manage.py migrate'
+    
+
+
+
+    
+    
