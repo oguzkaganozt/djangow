@@ -7,6 +7,9 @@ class Album(models.Model):
     genre = models.CharField(max_length=100)
     album_logo = models.CharField(max_length=1000)
 
+    def __str__(self):  # this expression gonna define how an Album instance named when called
+        return self.album_title
+
 class Song(models.Model):
     album = models.ForeignKey(Album, on_delete=models.CASCADE)  # Key to the album table
     file_type = models.CharField(max_length=10)

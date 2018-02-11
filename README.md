@@ -32,6 +32,11 @@ To apply the migration scripts to database run from terminal:
 
     'python manage.py migrate'
     
+To open up a great shell for interacting with models:
+
+    'python manage.py shell'
+ 
+    
 
 
 
