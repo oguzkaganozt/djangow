@@ -23,8 +23,12 @@ To start an app in django project run from terminal:
 To run the django development server run from terminal:
 
     'python manage.py runserver'
+
+To create migration scripts for models to database(django will auto create or alter changes for DB ) run from terminal:
+
+    'python manage.py makemigrations APPNAME'
     
-To sync the models to database(django will auto create or alter changes for DB ) run from terminal:
+To apply the migration scripts to database run from terminal:
 
     'python manage.py migrate'
     
