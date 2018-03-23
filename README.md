@@ -6,6 +6,7 @@ Main principal of it is The MVT(Model-View-Template) like MVC(Model View Control
 
 General design steps of a Django-site:
 
+    0. Create a django project and create an app using manage.py
     1. First step of backend is URL design: We do it so by adding paths to urls.py
     2. Then mapping each route to a view.
     3. Views designed as simple functions
