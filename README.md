@@ -36,6 +36,10 @@ To apply the migration scripts to database run from terminal:
 To open up a great shell for interacting with models:
 
     'python manage.py shell'
+    
+To create admin users for interacting with models using site/admin:
+
+    'python manage.py createsuperuser MYADMIN'
  
     
 
