@@ -80,9 +80,13 @@ To check heroku configvar: Configvar means environment variable set for spesific
 
     heroku config
 
-To check specific apps state:
+To check DB state:
 
     heroku pg
+    
+To open up a SQL shell:
+
+    heroku pg:psql
 
 To Run app at localhost in local machine: Simply different procfile for localhost (Procfile.windows=> web: python manage.py runserver 0.0.0.0:5000)
 
