@@ -82,6 +82,6 @@ To create virtualenv and install dependencies: Installing dependencies for local
     2. pipenv install    --> To instal dependencies to virtualenv 
     3. pipenv shell      --> To activate the virtualenv
 
-To create one-off dyno (just for system operations and used once and killed when Ctrl+C):
+To create one-off dyno (just for system operations and used once and killed when Ctrl+C. Like Windows cmd line):
 
-    heroku run -- > heroku run bash for open up a bash 
+    heroku run -- > "heroku run bash" for open up a bash or "heroku run shell" for open up a python shell
