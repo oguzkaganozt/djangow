@@ -60,6 +60,7 @@ To start a heroku remote for an app in (In apps root directory):
 
     git push heroku master
   
+Scaling an application on Heroku is equivalent to changing the number of dynos that are running. 
 To scale the app by setting active dynos (web=0 means site is offline):
 
     heroku ps:scale web=1
