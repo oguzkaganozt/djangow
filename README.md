@@ -44,6 +44,9 @@ To create admin users for interacting with models using site/admin:
     
 # heroku
 
+Heroku recognizes an app as a Python app by the existence of a Pipfile or requirements.txt file in the root directory.
+The Pipfile file lists the app dependencies together with their versions. When an app is deployed, Heroku reads this file and installs the appropriate Python dependencies using the pipenv install --system --skip-lock command.
+
 Heroku apps runs on little container called dynos. Dynos runs cmds listed on Procfile . Different types of dynos avaliable:
 
 https://devcenter.heroku.com/articles/dyno-types#setting-dyno-type
