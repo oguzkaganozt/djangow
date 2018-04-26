@@ -71,4 +71,13 @@ To scale the app by setting active dynos (web=0 means site is offline):
 To check heroku client process list:
 
     heroku ps
+
+To Run app at localhost in local machine: Simply different procfile for localhost (Procfile.windows=> web: python manage.py runserver 0.0.0.0:5000)
+
+    heroku local web -f Procfile.windows
     
+To create virtualenv and install dependencies: Installing dependencies for local machine needed. But once pushed to remote server Heroku auto detects dependencies from pipfile. No cmd's needed for remote server Heroku handles it.
+
+    1. pipenv --three    --> To initiate a virtualenv
+    2. pipenv install    --> To instal dependencies to virtualenv 
+    3. pipenv shell      --> To activate the virtualenv
