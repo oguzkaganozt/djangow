@@ -101,3 +101,13 @@ To create virtualenv and install dependencies: Installing dependencies for local
 To create one-off dyno (just for system operations and used once and killed when Ctrl+C. Like Windows cmd line):
 
     heroku run -- > "heroku run bash" for open up a bash or "heroku run python manage.py shell" for open up a python shell
+
+# Steps To Deploy Django App on Heroku
+
+    1. Create a virtual environment using pipenv
+    2. Install dependencies using pipenv install and make sure all dependencies in Pipfile and Pipfile.lock
+    3. Create Procfile with gunicorn
+    4. Add django-heroku package and call django_heroku.settings(locals()) in settings.py
+    5. Push app to heroku master
+    6. Run at least once makemigrations and migrate and collectstatic commands with heroku run
+    7. General Deployment done !
