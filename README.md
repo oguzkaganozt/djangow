@@ -42,8 +42,35 @@ To create admin users for interacting with models using site/admin:
     'python manage.py createsuperuser MYADMIN'
  
     
+# heroku
 
+Heroku apps runs on little container called dynos. Dynos runs cmds listed on Procfile . Different types of dynos avaliable:
 
+'Dyno Type	Sleeps	Professional Features	Memory (RAM)	CPU Share	Dedicated	Compute
+free	        yes	        no	                512 MB	        1x	        no	    1x-4x
+hobby	        no	        no	                512 MB	        1x	        no	    1x-4x
+standard-1x	    no	        yes	                512 MB	        1x	        no	    1x-4x
+standard-2x	    no	        yes	                1024 MB	        2x	        no	    4x-8x
+performance-m	no	        yes	                2.5 GB	        100%	    yes	    11x
+performance-l	no	        yes	                14 GB	        100%	    yes	    46x'
 
+Procfile lists proccess list for heroku to run such as:
+
+    web: gunicorn gettingstarted.wsgi --log-file -
     
+To start a heroku remote for an app in (In apps root directory):
+
+    heroku create
+    
+ To push local app repo to heroku remote (App Deploy to remote):
+
+    git push heroku master
+  
+To scale the app by setting active dynos (web=0 means site is offline):
+
+    heroku ps:scale web=1
+
+To check heroku client process list:
+
+    heroku ps
     
