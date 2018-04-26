@@ -71,6 +71,18 @@ To scale the app by setting active dynos (web=0 means site is offline):
 To check heroku client process list:
 
     heroku ps
+ 
+To check heroku addons:
+
+    heroku addons
+ 
+To check heroku configvar: Configvar means environment variable set for spesific app for example DATABASE_URL set in configvar
+
+    heroku config
+
+To check specific apps state:
+
+    heroku pg
 
 To Run app at localhost in local machine: Simply different procfile for localhost (Procfile.windows=> web: python manage.py runserver 0.0.0.0:5000)
 
