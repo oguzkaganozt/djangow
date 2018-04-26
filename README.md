@@ -84,4 +84,4 @@ To create virtualenv and install dependencies: Installing dependencies for local
 
 To create one-off dyno (just for system operations and used once and killed when Ctrl+C. Like Windows cmd line):
 
-    heroku run -- > "heroku run bash" for open up a bash or "heroku run shell" for open up a python shell
+    heroku run -- > "heroku run bash" for open up a bash or "heroku run python manage.py shell" for open up a python shell
