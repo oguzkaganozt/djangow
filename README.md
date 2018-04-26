@@ -46,13 +46,7 @@ To create admin users for interacting with models using site/admin:
 
 Heroku apps runs on little container called dynos. Dynos runs cmds listed on Procfile . Different types of dynos avaliable:
 
-'Dyno Type	Sleeps	Professional Features	Memory (RAM)	CPU Share	Dedicated	Compute
-free	        yes	        no	                512 MB	        1x	        no	    1x-4x
-hobby	        no	        no	                512 MB	        1x	        no	    1x-4x
-standard-1x	    no	        yes	                512 MB	        1x	        no	    1x-4x
-standard-2x	    no	        yes	                1024 MB	        2x	        no	    4x-8x
-performance-m	no	        yes	                2.5 GB	        100%	    yes	    11x
-performance-l	no	        yes	                14 GB	        100%	    yes	    46x'
+https://devcenter.heroku.com/articles/dyno-types#setting-dyno-type
 
 Procfile lists proccess list for heroku to run such as:
 
