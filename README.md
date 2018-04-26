@@ -81,3 +81,7 @@ To create virtualenv and install dependencies: Installing dependencies for local
     1. pipenv --three    --> To initiate a virtualenv
     2. pipenv install    --> To instal dependencies to virtualenv 
     3. pipenv shell      --> To activate the virtualenv
+
+To create one-off dyno (just for system operations and used once and killed when Ctrl+C):
+
+    heroku run -- > heroku run bash for open up a bash 
