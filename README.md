@@ -1,5 +1,5 @@
 # djangow
-Smooth web development with Django
+Smooth WEB development Tutorial with Django
 
 Django is WEB development framework for Python
 Main principal of it is The MVT(Model-View-Template) like MVC(Model View Controller)
